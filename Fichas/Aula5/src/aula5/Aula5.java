@@ -22,7 +22,6 @@ public class Aula5 {
         a.setX(10);
         
         double dist = a.distanceTo(b);
-        System.out.println(dist);
     }
     
 }
