@@ -9,9 +9,14 @@ package ficha7;
  *
  * @author Turma A
  */
-public class Rational {
+public class Rational implements Comparable<Rational> {
     int numerator;
     int denominator;
+
+    @Override
+    public int compareTo(Rational t) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
