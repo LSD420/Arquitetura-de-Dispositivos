@@ -59,5 +59,16 @@ public class Rectangle {
     public double inserted(Point a){
         return 2;
     }
+    public boolean contains(Point point){
+        boolean contains = false;
+        Point TopRightCorner = new Point(topLeftPoint.getX() + width, topLeftPoint.getY());
+        Point bottomRigthCorner = new Point(topLeftPoint.getX() + width, topLeftPoint.getY()- height);
+        Point bottomLeftCorner = new Point(topLeftPoint.getX(), topLeftPoint.getY()-height);
+        if (point.getX() > topLeftPoint.getX() && point.getX() < TopRightCorner.getX() && point.getY() > bottomRigthCorner.getY() && point.getY() < bottomLeftCorner.getY()){
+        contains = true;
+    }
+        return contains;
+    }
+
             
 }

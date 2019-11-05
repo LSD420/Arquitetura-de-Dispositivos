@@ -3,28 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula5;
+package aula6;
 
 /**
  *
  * @author Turma A
  */
-public class Aula5 {
+public class Aula6 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Point a = new Point();
-        Point b = new Point(10, 10);
-                
-        a.setX(10);
+        Car car = new Car(3, 2000, "Abacate", "Pera", 20000, "preto");
         
-        double dist = a.distanceTo(b);
         
-        Rectangle r = new Rectangle(new Point(0,3),5,3);
-        System.out.println("Contains: "+r);
     }
     
 }
